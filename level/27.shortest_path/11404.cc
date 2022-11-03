@@ -12,7 +12,7 @@ int main()
     cin.tie(NULL);
     cout.tie(NULL);
     cin >> n >> m;
-    vector<vector<int>> dist(n+1, vector<int>(n+1, INF));
+    vector<vector<int>> dist(n + 1, vector<int>(n + 1, INF));
 
     for (int i = 0; i <= n; i++)
     {
@@ -44,9 +44,10 @@ int main()
     {
         for (int j = 1; j <= n; j++)
         {
-            
-            if (dist[i][j] == INF) cout << 0;
-            else cout << dist[i][j];
+            if (dist[i][j] == INF)
+                cout << 0;
+            else
+                cout << dist[i][j];
             cout << " ";
         }
         cout << "\n";
